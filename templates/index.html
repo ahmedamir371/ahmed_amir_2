@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<!--suppress ALL -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation in HTML | CodingNepal</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <!-- Fontawesome CDN Link For Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+  <form method="GET" action="/predict">
+    <h2>Heart Disease prediction form</h2>
+    <div>
+      <label>BMI</label>
+      <input type="number" id="BMI" placeholder="BMI" name="BMI">
+    </div>
+    <div>
+      <label>physical health</label>
+      <input type="number" id="PhysicalHealth" name="PhysicalHealth"
+        placeholder="how many days during the past 30 days was your physical health not good">
+    </div>
+    <div>
+      <label>mental health</label>
+      <input type="number" id="MentalHealth" name="MentalHealth"
+        placeholder="how many days during the past 30 days was your mental health not good?">
+    </div>
+    <div>
+      <label>age</label>
+      <input type="number" id="AgeCategory" name="AgeCategory" placeholder="age">
+      <div class="SleepTime">
+        <label>Sleep time</label>
+        <input type="number" id="SleepTime" name="SleepTime" placeholder="Sleep time">
+      </div>
+    </div>
+    <div>
+      <label>smoking</label>
+      <select id="Smoking" name="Smoking">
+        <option value="" selected disabled>Have you smoked at least 100 cigarettes in your entire life? ( The answer Yes
+          or No )</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>Alcohol</label>
+      <select id="AlcoholDrinking" name="AlcoholDrinking">
+        <option value="" selected disabled>Are you drinking Alcohol </option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>Walking</label>
+      <select id="DiffWalking" name="DiffWalking">
+        <option value="" selected disabled>Do you have serious difficulty walking or climbing stairs?</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>Stroke</label>
+      <select id="Stroke" name="Stroke">
+        <option value="" selected disabled>(Ever told) (you had) a stroke?</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>gendre</label>
+      <select id="Sex" name="Sex">
+        <option value="" selected disabled>choose your gendre</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+      </select>
+    </div>
+    <div>
+      <label>Diabetic</label>
+      <select id="Diabetic" name="Diabetic">
+        <option value="" selected disabled>(Ever told) (you had) diabetes?</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+        <option value="No, borderline diabetes">No, borderline diabetes</option>
+        <option value="Yes (during pregnancy)">Yes (during pregnancy)</option>
+      </select>
+    </div>
+    <div>
+      <label>Physical Activity</label>
+      <select id="PhysicalActivity" name="PhysicalActivity">
+        <option value="" selected disabled> doing physical activity or exercise during the past 30 days other than their
+          regular job</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>GenHealth</label>
+      <select id="GenHealth" name="GenHealth">
+        <option value="" selected disabled> Would you say that in general your health is...</option>
+        <option value="Very good">Very good</option>
+        <option value="Very good">Very good</option>
+        <option value="Good">Good</option>
+        <option value="Poor">Poor</option>
+        <option value="Excellent">Excellent</option>
+      </select>
+    </div>
+    <div>
+      <label>Asthma</label>
+      <select id="Asthma" name="Asthma">
+        <option value="" selected disabled>(Ever told) (you had) asthma</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <label>KidneyDisease</label>
+      <select id="KidneyDisease" name="KidneyDisease">
+        <option value="" selected disabled> Not including kidney stones, bladder infection or incontinence</option>
+        <option value="1">yes</option>
+        <option value="0">no</option>
+      </select>
+    </div>
+    <div>
+      <label>SkinCancer</label>
+      <select id="SkinCancer" name="SkinCancer">
+        <option value="" selected disabled>(Ever told) (you had) skin cancer</option>
+        <option value="Yes">yes</option>
+        <option value="No">no</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit" onclick="predict()">Submit</button>
+    </div>
+  </form>
+
+
+</body>
+
+</html>
